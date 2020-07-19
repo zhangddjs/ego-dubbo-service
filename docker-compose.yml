@@ -12,4 +12,3 @@ services:
       - ./conf/db.properties:/ego-dubbo-service/conf/db.properties
       - ./conf/dubbo.properties:/ego-dubbo-service/conf/dubbo.properties
       - ./conf/log4j.properties:/ego-dubbo-service/conf/log4j.properties
-  
