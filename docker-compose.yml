@@ -1,0 +1,16 @@
+version: "3"
+services:
+  ego-dubbo-service: 
+    build: ./covfefezdd/ego-dubbo-service/latest/
+    #image: covfefezdd/ego-dubbo-service:latest
+    container_name: ego-dubbo-service
+    working_dir: /ego-dubbo-service/bin
+    ports:
+      - "20888:20888"
+    restart: always
+    volumes:
+      - ./conf/db.properties:/ego-dubbo-service/conf/db.properties
+      - ./conf/dubbo.properties:/ego-dubbo-service/conf/dubbo.properties
+      - ./conf/log4j.properties:/ego-dubbo-service/conf/log4j.properties
+    entrypoint: [./start.sh]
+  

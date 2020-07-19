@@ -3,7 +3,7 @@ dubbo-service of SOA-ego
 
 ## Supported tags and respective Dockerfile links
 
-<ul><li><a href="https://raw.githubusercontent.com/zhangddjs/docker-zookeeper/master/covfefezdd/zookeeper/latest/Dockerfile"><code>latest</code></a></li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/zhangddjs/ego-dubbo-service/master/covfefezdd/ego-dubbo-service/latest/Dockerfile"><code>latest</code></a></li></ul>
 
 ## Installation from Docker registry hub
 
@@ -18,10 +18,8 @@ docker pull covfefezdd/ego-dubbo-service
 You can build the image by Dockerfile with the following commands:
 
 ``` text
-wget https://raw.githubusercontent.com/zhangddjs/docker-zookeeper/master/covfefezdd/zookeeper/latest/Dockerfile
-wget https://raw.githubusercontent.com/zhangddjs/docker-zookeeper/master/covfefezdd/zookeeper/latest/zoo.cfg
-wget https://raw.githubusercontent.com/zhangddjs/docker-zookeeper/master/covfefezdd/zookeeper/latest/docker-entrypoint.sh
-docker build -t covfefezdd/zookeeper .
+wget https://github.com/zhangddjs/ego-dubbo-service/blob/master/covfefezdd/ego-dubbo-service/latest/Dockerfile
+docker build -t covfefezdd/ego-dubbo-service .
 ```
 
 ## Start to run
