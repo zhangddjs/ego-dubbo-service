@@ -7,6 +7,6 @@ RUN curl -SL https://github.com/zhangddjs/SOAego/releases/download/0.0.1/ego-dub
 ENV EGO_DUBBO_SERVICE_HOME=/ego-dubbo-service
 ENV PATH=$PATH:$EGO_DUBBO_SERVICE_HOME/bin
 WORKDIR $EGO_DUBBO_SERVICE_HOME/bin
-RUN chmod u+x ./start.sh && echo "sleep infinity; " >> ./start.sh
+RUN chmod u+x ./start.sh && echo "sleep infinity; " >> ./start.sh && sed -i 's/.$//g' ./start.sh
 EXPOSE 20888
 CMD ["./start.sh"]
