@@ -9,4 +9,4 @@ ENV PATH=$PATH:$EGO_DUBBO_SERVICE_HOME/bin
 WORKDIR $EGO_DUBBO_SERVICE_HOME/bin
 RUN chmod u+x ./start.sh
 EXPOSE 20888
-CMD ["./start.sh"]
+CMD ./start.sh ; sleep infinity
