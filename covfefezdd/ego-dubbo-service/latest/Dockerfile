@@ -8,6 +8,7 @@ ENV EGO_DUBBO_SERVICE_HOME=/ego-dubbo-service
 ENV PATH=$PATH:$EGO_DUBBO_SERVICE_HOME/bin
 WORKDIR $EGO_DUBBO_SERVICE_HOME/bin
 RUN chmod u+x ./start.sh; \
+    echo "touch ../stdout.log && chmod a+r ../stdout.log; " >> ./start.sh; \
     echo "tail -f ../stdout.log; " >> ./start.sh; \
     perl -pi -e 's/\r\n/\n/g' ./start.sh
 EXPOSE 20888
