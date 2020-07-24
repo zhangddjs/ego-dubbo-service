@@ -6,7 +6,10 @@ services:
     container_name: ego-dubbo-service
     working_dir: /ego-dubbo-service/bin
     environment:
-      - DUBBO_IP_TO_REGISTRY=10.100.13.173
+      - DUBBO_IP_TO_REGISTRY=10.100.13.173  #注册到注册中心的IP地址
+    #  - DUBBO_PORT_TO_REGISTRY=20888    #注册到注册中心的端口
+    #  - DUBBO_IP_TO_BIND=127.0.0.1    #监听IP地址
+    #  - DUBBO_PORT_TO_BIND=20888    #监听端口
     ports:
       - "20888:20888"
     restart: always
